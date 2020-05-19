@@ -1,4 +1,4 @@
-# movie-online
+# life-online
 
 ## Project setup
 ```
