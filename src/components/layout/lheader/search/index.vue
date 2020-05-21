@@ -1,10 +1,10 @@
 <template>
-  <div id="l-footer"></div>
+  <div id="search" class="header-item"></div>
 </template>
 
 <script>
   export default {
-    name: 'LFooter'
+    name: 'Search'
   }
 </script>
 

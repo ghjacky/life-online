@@ -1,10 +1,10 @@
 <template>
-  <div id="l-footer"></div>
+  <div id="navigation" class="header-item"></div>
 </template>
 
 <script>
   export default {
-    name: 'LFooter'
+    name: 'Navigation'
   }
 </script>
 
