@@ -1,5 +1,7 @@
 <template>
-  <div id="navigation" class="header-item"></div>
+  <div id="navigation" class="header-item">
+    <font-awesome-icon :icon="['fa','bars']" class="nav-pointer"></font-awesome-icon>
+  </div>
 </template>
 
 <script>
@@ -8,6 +10,6 @@
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  @import "~@/style/layout/lheader/navigation";
 </style>

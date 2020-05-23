@@ -1,0 +1,29 @@
+
+#l-header {
+  width: 100%;
+  position: fixed;
+  line-height: 100px;
+  background-image: linear-gradient(180deg, #202027, #ffffff);
+  opacity: 0.5;
+  z-index: 1024;
+
+  .header-container {
+    .header-item {
+      float: left;
+      display: inline-block;
+      height: 100%;
+      width: 25%;
+    }
+  }
+}
+
+.fly-out {
+  transition: transform .4s, -webkit-transform .4s;
+  transform: translateY(-100px);
+}
+
+.fly-in {
+  transition: transform .4s, -webkit-transform .4s;
+  transform: translateY(0);
+
+}

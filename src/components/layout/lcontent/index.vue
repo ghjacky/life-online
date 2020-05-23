@@ -11,7 +11,5 @@
 </script>
 
 <style scoped lang="scss">
-  #l-content {
-    height: 1000px;
-  }
+  @import "~@/style/layout/lcontent";
 </style>

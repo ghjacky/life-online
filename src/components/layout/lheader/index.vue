@@ -1,20 +1,23 @@
 <template>
   <div id="l-header">
-    <navigation></navigation>
-    <logo></logo>
-    <search></search>
-    <navigation></navigation>
+    <div class="container header-container">
+      <navigation></navigation>
+      <logo></logo>
+      <search></search>
+      <Register></Register>
+    </div>
   </div>
 </template>
 
 <script>
-  import Navigation from '@/components/layout/lheader/navigation/index'
-  import Logo from '@/components/layout/lheader/logo/index'
-  import Search from '@/components/layout/lheader/search/index'
+  import Navigation from '@/components/layout/lheader/navigation'
+  import Logo from '@/components/layout/lheader/logo'
+  import Search from '@/components/layout/lheader/search'
+  import Register from '@/components/layout/lheader/register'
 
   export default {
     name: 'LHeader',
-    components: { Search, Logo, Navigation }
+    components: { Search, Logo, Navigation, Register }
   }
 </script>
 

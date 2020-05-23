@@ -21,19 +21,28 @@
     mounted() {
       this.$nextTick(() => {
         console.log('log')
-        window.addEventListener('scroll', (e) => {
-          console.log(e)
-        })
+        window.addEventListener('scroll', this.handleWindowScroll, true)
       })
+    },
+    destroyed() {
+      window.removeEventListener('scroll', this.handleWindowScroll, true)
+    },
+    methods: {
+      handleWindowScroll(e) {
+        const doc = document.documentElement
+        const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0)
+        if (top >= 100) {
+          document.querySelector('body #l-header').classList.remove('fly-in')
+          document.querySelector('body #l-header').classList.add('fly-out')
+        } else {
+          document.querySelector('body #l-header').classList.remove('fly-out')
+          document.querySelector('body #l-header').classList.add('fly-in')
+        }
+      }
     }
   }
 </script>
 
 <style scoped lang="scss">
-  #layout {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
+  @import "~@/style/layout";
 </style>
