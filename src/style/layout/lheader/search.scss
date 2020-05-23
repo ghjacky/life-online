@@ -1,0 +1,9 @@
+#l-header {
+  #search {
+    .el-input /deep/ .el-input__inner {
+      border-radius: 15px !important;
+      background: hsla(0,0%,100%,.5);
+      color: #ffffff;
+    }
+  }
+}

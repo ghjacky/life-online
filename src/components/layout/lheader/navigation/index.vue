@@ -1,5 +1,5 @@
 <template>
-  <div id="navigation" class="header-item">
+  <div id="navigation">
     <font-awesome-icon :icon="['fa','bars']" class="nav-pointer"></font-awesome-icon>
   </div>
 </template>

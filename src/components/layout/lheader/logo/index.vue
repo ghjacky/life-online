@@ -1,6 +1,6 @@
 <template>
-  <div id="logo" class="header-item">
-    <span class="logo-text">life-online</span>
+  <div id="logo">
+    <span class="logo-text">ISTube</span>
   </div>
 </template>
 

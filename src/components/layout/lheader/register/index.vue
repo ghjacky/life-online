@@ -1,5 +1,12 @@
 <template>
-  <div id="register" class="header-item"></div>
+  <div id="register">
+    <div class="reg-item register">
+      <el-button>Register</el-button>
+    </div>
+    <div class="reg-item sign-in">
+      <el-button type="text">Sign in</el-button>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -8,6 +15,6 @@
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  @import "~@/style/layout/lheader/register.scss";
 </style>

@@ -1,5 +1,5 @@
 import VueRouter from 'vue-router'
-import { MainPageRouter } from './main'
+import { MainPageRouter } from './home'
 import Vue from 'vue'
 
 Vue.use(VueRouter)

@@ -1,0 +1,27 @@
+#l-header {
+  #register {
+    float: right;
+    text-align: right;
+
+    .reg-item {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .register {
+      .el-button {
+        color: #000000;
+      }
+
+      .el-button:hover {
+        box-shadow: 2px 2px 4px #DCDFE6, -2px -2px 4px #DCDFE6, 2px -2px 4px #DCDFE6, -2px 2px 4px #DCDFE6;
+      }
+    }
+
+    .sign-in {
+      .el-button {
+        color: #ffffff;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 export const MainPageRouter = {
   path: '/',
   name: '/',
-  component: () => import('@/views/index'),
+  component: () => import('@/views/home'),
   meta: { title: '主页' }
 }

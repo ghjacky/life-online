@@ -1,10 +1,12 @@
 <template>
   <div id="l-header">
     <div class="container header-container">
-      <navigation></navigation>
-      <logo></logo>
-      <search></search>
-      <Register></Register>
+      <div class="header-item">
+        <navigation></navigation>
+        <logo></logo>
+      </div>
+      <search class="header-item"></search>
+      <Register class="header-item"></Register>
     </div>
   </div>
 </template>
