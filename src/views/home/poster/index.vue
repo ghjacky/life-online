@@ -1,5 +1,6 @@
 <template>
   <div id="poster">
+    <el-image :src="require('@/assets/test.jpg')"></el-image>
   </div>
 </template>
 

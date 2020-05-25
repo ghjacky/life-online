@@ -1,6 +1,20 @@
 #poster {
   height: 500px;
   width: 100%;
-  background-image: url("~@/assets/test.jpg");
-  opacity: 0.5;
+  opacity: 0.4;
+  position: relative;
+  .el-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#poster:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 -100px 50px -50px #26262d inset;
 }
