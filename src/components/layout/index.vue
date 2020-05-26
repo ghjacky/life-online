@@ -31,7 +31,7 @@
       handleWindowScroll(e) {
         const doc = document.documentElement
         const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0)
-        if (top >= 250) {
+        if (top >= 200) {
           document.querySelector('body #l-header').classList.remove('fly-in')
           document.querySelector('body #l-header').classList.add('fly-out')
         } else {
