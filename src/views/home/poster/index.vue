@@ -2,12 +2,16 @@
   <div id="poster">
     <el-image :src="currentPoster"></el-image>
     <div class="poster-title">{{ currentItem.title }}</div>
+    <rolling-over></rolling-over>
   </div>
 </template>
 
 <script>
+  import RollingOver from '@/views/home/poster/rolling-over'
+
   export default {
     name: 'Poster',
+    components: { RollingOver },
     data() {
       return {
         currentItem: {
@@ -35,5 +39,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import "~@/style/layout/lcontent/poster.scss";
+  @import "~@/style/layout/lcontent/poster/poster.scss";
 </style>
