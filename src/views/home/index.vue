@@ -2,6 +2,7 @@
   <layout>
     <template slot="l-content">
       <poster></poster>
+      <el-divider></el-divider>
       <list></list>
     </template>
   </layout>
@@ -23,4 +24,5 @@
 </script>
 
 <style scoped>
+  @import "~@/style/layout/lcontent/index.scss";
 </style>

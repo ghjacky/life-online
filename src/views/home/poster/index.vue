@@ -2,7 +2,7 @@
   <div id="poster">
     <el-image :src="currentPoster"></el-image>
     <div class="poster-title">{{ currentItem.title }}</div>
-    <rolling-over></rolling-over>
+    <rolling-over :current-item.sync="currentItem"></rolling-over>
   </div>
 </template>
 

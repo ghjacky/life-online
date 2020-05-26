@@ -1,17 +1,45 @@
 #rolling-over {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   width: 100%;
-  line-height: 100px;
-  border: 1px solid blue;
-  .arrow {
-    font-size: 100px;
-    color: #ffffff;
+  height: 80px;
+  z-index: 2;
+
+  .rolling-item-active {
+    img {
+      filter: brightness(100%) !important;
+    }
   }
-  .arrow-left {
+
+  .rolling-item {
+    display: inline-block;
+    width: 60px;
+    margin: 0 3px;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #a8a8a8;
+
+    img {
+      width: 100%;
+      height: 100%;
+      float: left;
+      filter: brightness(50%);
+    }
+  }
+
+  .rolling-items-before {
     float: left;
   }
-  .arrow-right {
-    float: right;
+
+  .rolling-items-after {
+    float: left;
+  }
+
+  .rolling-center {
+    float: left;
+    width: calc(100% - 2 * (60px + 3px * 2 + 1px * 2) * 2);
+    height: 100%;
   }
 }

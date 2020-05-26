@@ -31,7 +31,8 @@
     "vuex": "^3.4.0",
     "webpack": "^4.43.0",
     "css-loader": "^3.5.3",
-    "style-loader": "^1.2.1"
+    "style-loader": "^1.2.1",
+    "moment": "^2.26.0"
   },
   "eslintConfig": {
     "root": true,
