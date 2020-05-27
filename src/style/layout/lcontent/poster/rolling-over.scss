@@ -41,5 +41,37 @@
     float: left;
     width: calc(100% - 2 * (60px + 3px * 2 + 1px * 2) * 2);
     height: 100%;
+
+    .watch-now-container {
+      width: calc(100% - 20% * 2 - 10px * 2);
+      height: 100%;
+      float: left;
+      line-height: 80px;
+      .el-button {
+        height: 60%;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+
+    .tips {
+      text-align: left;
+      font-size: 12px;
+      color: #ffffff;
+      font-weight: 700;
+      padding-left: 10px;
+      width: 20%;
+      height: 100%;
+      float: left;
+
+      span {
+        display: block;
+      }
+
+      .category {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
   }
 }

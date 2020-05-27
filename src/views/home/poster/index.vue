@@ -18,6 +18,11 @@
           id: 0,
           title: 'We Need to Talk About Kevin',
           summary: '',
+          category: 'Drama',
+          publish: '2019-01-01',
+          duration: '5400',
+          rating: 'R',
+          cover: require('@/assets/test.jpg'),
           poster: require('@/assets/test.jpg')
         },
         latestItems: [

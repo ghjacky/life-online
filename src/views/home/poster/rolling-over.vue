@@ -2,7 +2,7 @@
   <div id="rolling-over">
     <div v-for="(item,index) in rollingItems.slice(0, 2)" :key="`before-${index}`"
          class="rolling-item rolling-items-before" :id="`rolling-item-before-${index}`">
-      <img :src="item.poster" />
+      <img :src="item.cover" />
     </div>
     <div class="rolling-center">
       <div class="tips">
@@ -12,6 +12,10 @@
           <span class="duration">{{ parseInt(currentItem.duration / 60.0 / 60.0 + '') }} hr {{ parseInt((currentItem.duration / 60.0 / 60.0 + '').split('.')[1]) / 10 * 60 }} min</span>
         </div>
       </div>
+      <div class="watch-now-container">
+        <el-button type="danger" size="large">Watch Free Now</el-button>
+      </div>
+      <div class="tips"></div>
     </div>
     <div v-for="(item,index) in rollingItems.slice(2, 4)" :key="`after-${index}`"
          class="rolling-item roling-items-after" :id="`rolling-item-after-${index}`">
@@ -30,9 +34,12 @@
           return {
             id: 0,
             title: 'We Need to Talk About Kevin',
+            summary: '',
             category: 'Drama',
             publish: '2019-01-01',
             duration: '5400',
+            rating: 'R',
+            cover: require('@/assets/test.jpg'),
             poster: require('@/assets/test.jpg')
           }
         }
@@ -51,13 +58,15 @@
         return {
           id: index,
           title: 'We Need to Talk About Kevin',
+          summary: '',
           category: 'Drama',
           publish: '2019-01-01',
           duration: '5400',
+          rating: 'R',
+          cover: require('@/assets/test.jpg'),
           poster: require('@/assets/test.jpg')
         }
       })
-      this.currentItem = this.rollingItems[1]
     },
     mounted() {
       this.rollingOver()
@@ -71,7 +80,7 @@
         }, 3000)
       },
       setCurrentActiveRollingItem(index) {
-        this.currentItem = this.rollingItems[1]
+        this.$emit('update:currentItem', this.rollingItems[1])
         document.querySelectorAll('#rolling-over .rolling-item-active').forEach(el => {
           el.classList.remove('rolling-item-active')
         })
