@@ -1,11 +1,11 @@
 import VueRouter from 'vue-router'
-import { MainPageRouter } from './home'
+import { MovieRouter } from './movie'
 import Vue from 'vue'
 
 Vue.use(VueRouter)
 
 export const constantRoutes = [
-  MainPageRouter
+  MovieRouter
 ]
 
 export const router = new VueRouter({

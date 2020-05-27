@@ -36,6 +36,7 @@
             title: 'We Need to Talk About Kevin',
             summary: '',
             category: 'Drama',
+            tag: 'documentary, sport',
             publish: '2019-01-01',
             duration: '5400',
             rating: 'R',
@@ -91,5 +92,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import "~@/style/layout/lcontent/poster/rolling-over.scss";
+  @import "~@/style/movie/poster/rolling-over.scss";
 </style>

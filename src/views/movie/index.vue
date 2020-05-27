@@ -10,8 +10,8 @@
 
 <script>
   import Layout from '@/components/layout/index'
-  import Poster from '@/views/home/poster/index'
-  import List from '@/views/home/list/index'
+  import Poster from '@/views/movie/poster/index'
+  import List from '@/views/movie/list/index'
 
   export default {
     name: 'Index',

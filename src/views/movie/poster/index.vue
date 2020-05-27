@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import RollingOver from '@/views/home/poster/rolling-over'
+  import RollingOver from '@/views/movie/poster/rolling-over'
 
   export default {
     name: 'Poster',
@@ -19,20 +19,13 @@
           title: 'We Need to Talk About Kevin',
           summary: '',
           category: 'Drama',
+          tag: 'documentary, sport',
           publish: '2019-01-01',
           duration: '5400',
           rating: 'R',
           cover: require('@/assets/test.jpg'),
           poster: require('@/assets/test.jpg')
-        },
-        latestItems: [
-          {
-            id: 0,
-            title: '',
-            summary: '',
-            poster: require('@/assets/test.jpg')
-          }
-        ]
+        }
       }
     },
     computed: {
@@ -44,5 +37,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import "~@/style/layout/lcontent/poster/poster.scss";
+  @import "~@/style/movie/poster/poster.scss";
 </style>
