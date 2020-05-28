@@ -2,11 +2,8 @@
   position: relative;
   width: 80%;
   margin: 0 auto;
-  height: 100%;
-  min-height: 800px;
-
-  .el-divider {
-    width: 100%;
-    background-color: #48494c;
+  display: table;
+  .load-more {
+    margin-bottom: 30px;
   }
 }

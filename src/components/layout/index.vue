@@ -6,6 +6,7 @@
         <slot name="l-content"></slot>
       </template>
     </l-content>
+    <el-divider></el-divider>
     <l-footer></l-footer>
   </div>
 </template>
