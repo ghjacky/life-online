@@ -11,10 +11,10 @@ import locale from 'element-ui/lib/locale/lang/en'
 Vue.use(ElementUI, { locale })
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faAngleLeft, faAngleRight, faPlay } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faBars, faAngleLeft, faAngleRight)
+library.add(faBars, faAngleLeft, faAngleRight, faPlay)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false

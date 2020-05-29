@@ -21,7 +21,6 @@
     components: { LFooter, LContent, LHeader },
     mounted() {
       this.$nextTick(() => {
-        console.log('log')
         window.addEventListener('scroll', this.handleWindowScroll, true)
       })
     },

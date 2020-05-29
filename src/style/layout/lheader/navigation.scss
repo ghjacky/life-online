@@ -7,5 +7,30 @@
     .nav-pointer {
       cursor: pointer;
     }
+
+    #nav-square {
+      background-color: white;
+      width: 800px;
+      height: 300px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px;
+      box-shadow: 1px 1px 2px white, -1px -1px 2px white, -1px 1px 2px white, 1px -1px 2px white;
+      display: inline-block;
+      position: absolute;
+      top: 100px;
+      left: 10%;
+    }
+
+    #nav-square:after {
+      color: white;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid;
+      border-left: 10px solid transparent;
+      display: inline-block;
+      content: '';
+      position: absolute;
+      top: -10px;
+    }
   }
 }
