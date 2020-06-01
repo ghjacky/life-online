@@ -29,35 +29,7 @@
       border: 2px solid grey;
       height: 240px;
       width: 100%;
-    }
-
-    .play-icon-wrapper {
-      position: absolute;
-      border: 2px solid grey;
-      height: 240px;
-      width: 100%;
-      top: 0;
-      left: 0;
-      font-size: 70px;
-      display: table;
-      vertical-align: middle;
       cursor: pointer;
-
-      .play-icon {
-        display: none;
-      }
-    }
-
-    .play-icon-wrapper:hover {
-      background-color: rgba(0, 0, 0, 0.3);
-
-      .play-icon {
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        opacity: 0.8;
-        transform: translate(-50%, -50%);
-      }
     }
 
     .title {

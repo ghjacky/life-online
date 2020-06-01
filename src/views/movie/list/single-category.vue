@@ -3,9 +3,6 @@
     <div class="title">{{ category.name }}</div>
     <div v-for="(movie,index) in category.movies.slice(0, 6)" :key="index" class="movie-item-container">
       <img :src="movie.cover" />
-      <div class="play-icon-wrapper">
-        <font-awesome-icon :icon="['fa', 'play']" class="play-icon"></font-awesome-icon>
-      </div>
       <div class="title">{{ movie.title }}</div>
       <div class="stuff">
         <div class="square-01">
