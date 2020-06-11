@@ -18,8 +18,11 @@
 </template>
 
 <script>
+  import { defaultMovieDataMixins } from '@/views/movie/mixins/common'
+
   export default {
     name: 'SingleCategory',
+    mixins: [defaultMovieDataMixins],
     props: {
       category: {
         type: Object,
@@ -27,20 +30,7 @@
           return {
             id: 0,
             name: 'Documentary',
-            movies: [
-              {
-                id: 0,
-                title: 'We Need to Talk About Kevin',
-                summary: '',
-                category: 'Drama',
-                tag: 'documentary, sport',
-                publish: '2019-01-01',
-                duration: '5400',
-                rating: 'R',
-                cover: require('@/assets/test.jpg'),
-                poster: require('@/assets/test.jpg')
-              }
-            ]
+            movies: [this.defaultMovie]
           }
         }
       }

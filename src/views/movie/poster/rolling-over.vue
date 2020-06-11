@@ -25,24 +25,16 @@
 </template>
 
 <script>
+  import { defaultMovieDataMixins } from '@/views/movie/mixins/common'
+
   export default {
     name: 'RollingOver',
+    mixins: [defaultMovieDataMixins],
     props: {
       currentItem: {
         type: Object,
         default: () => {
-          return {
-            id: 0,
-            title: 'We Need to Talk About Kevin',
-            summary: '',
-            category: 'Drama',
-            tag: 'documentary, sport',
-            publish: '2019-01-01',
-            duration: '5400',
-            rating: 'R',
-            cover: require('@/assets/test.jpg'),
-            poster: require('@/assets/test.jpg')
-          }
+          return this.defaultMovie
         }
       }
     },

@@ -12,30 +12,19 @@
 
 <script>
   import SingleCategory from '@/views/movie/list/single-category'
+  import { defaultMovieDataMixins } from '@/views/movie/mixins/common'
 
   export default {
     name: 'List',
     components: { SingleCategory },
+    mixins: [defaultMovieDataMixins],
     data() {
       return {
         categories: [
           {
             id: 0,
             name: 'Documentary',
-            movies: [
-              {
-                id: 0,
-                title: 'We Need to Talk About Kevin',
-                summary: '',
-                category: 'Drama',
-                tag: 'documentary, sport',
-                publish: '2019-01-01',
-                duration: '5400',
-                rating: 'R',
-                cover: require('@/assets/test.jpg'),
-                poster: require('@/assets/test.jpg')
-              }
-            ]
+            movies: [this.defaultMovie]
           }
         ],
         showItems: []
@@ -47,18 +36,7 @@
           id: index,
           name: 'Documentary',
           movies: Array(8).fill(0).map((item1, index1) => {
-            return {
-              id: index1,
-              title: 'We Need to Talk About Kevin',
-              summary: '',
-              category: 'Drama',
-              tag: 'documentary, sport',
-              publish: '2019-01-01',
-              duration: '5400',
-              rating: 'R',
-              cover: require('@/assets/test.jpg'),
-              poster: require('@/assets/test.jpg')
-            }
+            return this.defaultMovie
           })
         }
       })
