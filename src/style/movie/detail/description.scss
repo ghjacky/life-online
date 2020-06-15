@@ -67,4 +67,20 @@
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
   }
+
+  .desc-item {
+    text-align: left;
+    span {
+      display: inline-block;
+    }
+    .desc-title {
+      font-weight: 600;
+      font-size: 14px;
+      margin-right: 30px;
+    }
+    .desc-text {
+      font-size: 13px;
+      color: white;
+    }
+  }
 }

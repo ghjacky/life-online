@@ -13,6 +13,17 @@
     </div>
     <div class="tag">{{ currentItem.tag }}</div>
     <div class="summary">{{ currentItem.summary }}</div>
+    <el-divider></el-divider>
+    <div class="desc-item director">
+      <span class="desc-title">DIRECTOR</span>
+      <span class="desc-text">{{ currentItem.director }}</span>
+    </div>
+    <el-divider></el-divider>
+    <div class="desc-item director">
+      <span class="desc-title">STARRING</span>
+      <span class="desc-text">{{ currentItem.starring }}</span>
+    </div>
+    <el-divider></el-divider>
   </div>
 </template>
 
@@ -32,6 +43,8 @@
             publish: '2019-01-01',
             duration: '5400',
             rating: 'R',
+            director: 'Steven Allan Spielberg',
+            starring: 'Jet Li, Jack Chen, Donnie Yen',
             cover: require('@/assets/test.jpg'),
             poster: require('@/assets/test.jpg')
           }
