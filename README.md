@@ -1,4 +1,4 @@
-# life-online
+# ISTube
 
 ## Project setup
 ```
