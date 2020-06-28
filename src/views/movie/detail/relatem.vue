@@ -1,14 +1,19 @@
 <template>
   <div class="related-item">
-    <div class="cover">
-      <el-image></el-image>
+    <div class="item-wrapper cover">
+      <el-image :src="item.cover"></el-image>
     </div>
-    <div class="stuff">
-      <div class="title"></div>
-      <div class="publish-duration"></div>
-      <div class="tag"></div>
+    <div class="item-wrapper stuff">
+      <div class="s-one title">{{ item.title }}</div>
+      <div class="s-two">
+        <div class="publish-duration">({{ item.publish.split('-')[0] }})
+          . {{ parseInt(item.duration / 60.0 / 60.0 + '') }}
+          hr {{ parseInt((item.duration / 60.0 / 60.0 + '').split('.')[1]) / 10 * 60 }} min
+        </div>
+        <div class="tag">{{ item.tag }}</div>
+      </div>
     </div>
-    <div class="rate"></div>
+    <div class="item-wrapper rating"><span>{{ item.rating }}</span></div>
   </div>
 </template>
 
@@ -27,7 +32,7 @@
             tag: '',
             publish: '',
             duration: '',
-            rating: '',
+            c: '',
             director: '',
             starring: '',
             cover: '',
@@ -39,6 +44,6 @@
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  @import "~@/style/movie/detail/relatem.scss";
 </style>

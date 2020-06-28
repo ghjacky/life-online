@@ -1,0 +1,52 @@
+.related-item {
+  height: 96px;
+  position: relative;
+  .item-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    height: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+  }
+  .item-wrapper:first-child {
+    margin-left: 0;
+  }
+  .cover {
+    .el-image {
+      height: 100%;
+      width: 60px;
+    }
+  }
+  .rating {
+    width: 40px;
+    height: 20%;
+    transform: translateY(-220%);
+    display: inline-table;
+    span {
+      display: table-cell;
+      vertical-align: middle;
+      background-color: #858585;
+      border-radius: 6px;
+    }
+  }
+  .stuff {
+    width: calc((100% - 10px * 2 ) - 60px - 40px);
+    text-align: left;
+    .s-one {
+      font-size: 14px;
+      font-weight: 900;
+      overflow: hidden;
+    }
+    .s-two {
+      color: #858585;
+      position: absolute;
+      bottom: 0;
+      .publish-duration {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}

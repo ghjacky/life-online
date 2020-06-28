@@ -19,9 +19,11 @@
     data() {
       return {
         relatedItems: [
-          defaultMovieDataMixins
         ]
       }
+    },
+    created() {
+      this.relatedItems = [this.defaultMovie]
     }
   }
 </script>
