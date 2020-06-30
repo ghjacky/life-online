@@ -15,12 +15,12 @@
     <div class="summary">{{ currentItem.summary }}</div>
     <el-divider></el-divider>
     <div class="desc-item director">
-      <span class="desc-title">DIRECTOR</span>
+      <span class="desc-label">DIRECTOR</span>
       <span class="desc-text">{{ currentItem.director }}</span>
     </div>
     <el-divider></el-divider>
     <div class="desc-item director">
-      <span class="desc-title">STARRING</span>
+      <span class="desc-label">STARRING</span>
       <span class="desc-text">{{ currentItem.starring }}</span>
     </div>
     <el-divider></el-divider>
