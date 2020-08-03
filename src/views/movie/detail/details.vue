@@ -4,6 +4,9 @@
     <div class="play-icon-wrapper">
       <font-awesome-icon :icon="['fa', 'play']" class="play-icon" @click="handlePlay"></font-awesome-icon>
     </div>
+    <div class="play">
+      <el-button type="primary" size="large">播放</el-button>
+    </div>
     <div class="share">
       <el-button type="primary" size="large">分享</el-button>
     </div>

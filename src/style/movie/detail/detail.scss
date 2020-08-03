@@ -9,11 +9,12 @@
     height: 260px;
   }
 
-  .share {
+  .share, .play {
     .el-button {
       width: 100%;
       background-color: #434351;
       border: none;
+      margin-bottom: 5px;
     }
   }
 
