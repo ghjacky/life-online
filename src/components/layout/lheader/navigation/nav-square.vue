@@ -31,6 +31,6 @@
   }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  @import "~@/style/layout/lheader/navigation.scss";
 </style>
